@@ -70,21 +70,21 @@ export const projectsData: Project[] = [
   {
     id: "darshan-ai",
     title: "Darshan AI",
-    subtitle: "Autonomous AI Agent Web Platform with Tools & Memory",
+    subtitle: "Full-Stack AI Assistant with RAG, Tool Calling & GitHub Analysis",
     category: "ai-ml",
-    tags: ["React", "TypeScript", "AI Agents", "Python Ready", "Tailwind CSS", "REST API"],
-    description: "A modern, responsive AI Agent web application engineered with intelligent tools, conversational memory, and autonomous task execution capabilities. Ready for instant live deployment with zero authentication barrier.",
+    tags: ["React", "TypeScript", "FastAPI", "Supabase", "OpenRouter", "RAG"],
+    description: "A full-stack AI assistant: a React + TypeScript web app backed by a FastAPI service that routes chat through OpenRouter. It answers questions over uploaded PDF and text documents with source citations, analyzes public GitHub repositories, and reads uploaded files through a tool-calling loop. Guests can chat immediately; signing in with Supabase Auth unlocks document upload, memory and saved conversations.",
     highlights: [
-      "Engineered an autonomous AI agent web workspace featuring zero-auth friction for immediate user interaction.",
-      "Designed extensible agent tool architectures, conversation memory management, and structured execution pipelines ready for Python backend integration.",
-      "Built a polished dark-mode user interface utilizing JetBrains Mono code aesthetics and real-time execution feedback.",
-      "Deployed live on GitHub Pages with instant availability and cross-device responsiveness."
+      "Built a React 19 + TypeScript + Tailwind chat workspace with live activity steps, tool-call panels and source-citation cards, deployed on GitHub Pages.",
+      "Developed a FastAPI backend with OpenRouter LLM integration and a tool-calling loop (file reader, GitHub repository analyzer, calculator), secured with Supabase token verification.",
+      "Implemented a document RAG pipeline: PDF/TXT upload, sentence-aware chunking, per-user vector storage in Supabase, and citation-backed retrieval.",
+      "Added a human-approval flow for sensitive tool actions and deployed the API on Render's free tier using memory-conscious lexical embeddings."
     ],
     metrics: [
-      { label: "Deployment", value: "Live GitHub Pages" },
-      { label: "Auth Requirement", value: "No Auth Required" },
-      { label: "Architecture", value: "Tools + Memory" },
-      { label: "Stack", value: "React + TypeScript" }
+      { label: "Frontend", value: "React + TypeScript" },
+      { label: "Backend", value: "FastAPI + OpenRouter" },
+      { label: "Auth", value: "Guest chat · Supabase sign-in" },
+      { label: "Deployment", value: "GitHub Pages + Render" }
     ],
     liveUrl: "https://darshem-21.github.io/Darshan-AI/",
     githubUrl: "https://github.com/darshem-21/Darshan-AI",
