@@ -73,7 +73,7 @@ export default function App() {
                   Interactive Live App Previews
                 </h2>
                 <p className="text-slate-400 mt-2 text-sm sm:text-base leading-relaxed">
-                  Interact with two live, production-deployed systems side-by-side in real-time. Experience the <strong className="text-emerald-300">Agosphere</strong> agricultural commerce platform and the zero-auth <strong className="text-cyan-300">Darshan AI</strong> autonomous agent right inside the browser.
+                  Interact with two live, deployed systems side-by-side in real-time. Experience the <strong className="text-emerald-300">Agosphere</strong> agricultural commerce platform and the <strong className="text-cyan-300">Darshan AI</strong> assistant (document RAG, tools and GitHub analysis) right inside the browser.
                 </p>
               </div>
 
@@ -96,7 +96,7 @@ export default function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold text-cyan-200 bg-cyan-950/50 hover:bg-cyan-900/50 border border-cyan-800/60 rounded-xl transition-colors shadow-sm"
-                  title="Open Darshan-AI (No Auth Required) in external browser tab"
+                  title="Open Darshan AI in a new browser tab"
                 >
                   <Bot className="w-3.5 h-3.5 text-cyan-400" />
                   <span>darshem-21.github.io/Darshan-AI</span>
