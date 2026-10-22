@@ -53,15 +53,15 @@ export const LIVE_APPS: LiveAppConfig[] = [
   {
     id: 'darshan-ai',
     title: 'Darshan AI',
-    tagline: 'Autonomous AI Agent Platform · Tools & Memory',
-    badge: 'ONLINE · NO AUTH REQUIRED',
+    tagline: 'AI Assistant · RAG, Tools & GitHub Analysis',
+    badge: 'ONLINE · GUEST CHAT, SIGN-IN FOR DOCS',
     badgeColor: 'text-cyan-300 bg-cyan-500/10 border-cyan-500/30',
     url: 'https://darshem-21.github.io/Darshan-AI/',
     displayUrl: 'darshem-21.github.io/Darshan-AI',
     githubUrl: 'https://github.com/darshem-21/Darshan-AI',
     defaultDevice: 'desktop',
-    techStack: ['React', 'TypeScript', 'AI Agents', 'Python Ready', 'Tailwind'],
-    keyHighlight: 'Instant Access · Zero-Auth Barrier · Agent Workflows',
+    techStack: ['React', 'TypeScript', 'FastAPI', 'Supabase', 'OpenRouter'],
+    keyHighlight: 'Document Q&A with Citations · Tool Calling · GitHub Repo Analysis',
     icon: Bot,
     accentColor: 'cyan'
   }
