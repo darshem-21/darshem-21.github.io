@@ -62,12 +62,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
     setAgentLogs(null);
     setTimeout(() => {
       setAgentLogs([
-        'Initializing autonomous planner agent (Zero-Auth Architecture)...',
-        'Step 1: Loaded tool registry [data_extractor, sentiment_engine, metrics_synthesizer]',
+        'Initializing simulated planner preview...',
+        'Step 1: Loaded tool registry [document_search, github_analyzer, file_reader, calculator]',
         'Step 2: Parsing user intent: "' + agentTask.slice(0, 45) + '..."',
-        'Step 3: Contextual memory retrieved (session context token ID #829)',
-        'Step 4: Executed multi-step pipeline with automated fallback validation',
-        'Status: Execution Completed Successfully · Ready for Python Backend API'
+        'Step 3: Document context retrieval (simulated)',
+        'Step 4: Composed grounded answer with source citations (simulated)',
+        'Preview complete. Open the live app below for real tool calls.'
       ]);
       setIsAgentRunning(false);
     }, 600);
@@ -513,11 +513,11 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               {project.demoType === 'ai-agent' && (
                 <div className="space-y-4">
                   <p className="text-xs text-slate-400">
-                    Test the autonomous agent execution pipeline with zero-authentication requirement:
+                    This is a scripted preview that runs in your browser and does not call the backend. Use the live app below for the real assistant:
                   </p>
 
                   <div className="space-y-2">
-                    <label className="block text-xs text-slate-300 font-medium">Agent Instruction / Autonomous Task</label>
+                    <label className="block text-xs text-slate-300 font-medium">Sample Task (preview only)</label>
                     <input
                       type="text"
                       value={agentTask}
@@ -528,9 +528,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
 
                   <div className="flex flex-wrap gap-2">
                     {[
-                      'Scrape & analyze APMC agricultural market rates',
-                      'Run TF-IDF fraud detection on batch customer reviews',
-                      'Compile timber board-foot quotes for artisan catalog'
+                      'Search my documents for key skills',
+                      'Analyze the architecture of a public GitHub repository',
+                      'Calculate 245 * 18'
                     ].map((preset) => (
                       <button
                         key={preset}
@@ -548,12 +548,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                     className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-cyan-600 hover:bg-cyan-500 rounded-lg transition-colors disabled:opacity-50"
                   >
                     <Sparkles className="w-4 h-4" />
-                    {isAgentRunning ? 'Executing Autonomous Agent Pipeline...' : 'Run Autonomous Agent Tool Pipeline'}
+                    {isAgentRunning ? 'Running preview...' : 'Run Simulated Pipeline Preview'}
                   </button>
 
                   {agentLogs && (
                     <div className="p-4 rounded-xl bg-black border border-cyan-500/30 text-xs font-mono space-y-1.5 text-slate-300">
-                      <p className="text-cyan-400 font-bold mb-2">Agent Execution Logs (Client Sandbox):</p>
+                      <p className="text-cyan-400 font-bold mb-2">Simulated Preview Logs (runs locally, not the real agent):</p>
                       {agentLogs.map((log, idx) => (
                         <p key={idx} className="leading-relaxed">
                           <span className="text-slate-500">[{idx + 1}]</span> {log}
@@ -570,7 +570,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                           <ExternalLink className="w-3.5 h-3.5 text-cyan-400" />
                           Live GitHub Pages Deployment (darshem-21.github.io/Darshan-AI)
                         </span>
-                        <p className="text-[11px] text-slate-400 mt-0.5">Direct interactive session with no authentication required</p>
+                        <p className="text-[11px] text-slate-400 mt-0.5">Guest chat works without signing in; sign in for document upload and memory</p>
                       </div>
 
                       <button
