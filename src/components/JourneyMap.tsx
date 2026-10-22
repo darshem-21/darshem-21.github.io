@@ -143,9 +143,9 @@ const questLevels: QuestLevel[] = [
       gradient: "from-rose-500 to-red-600"
     },
     stars: 3,
-    xpUnlocked: ["Darshan AI (Autonomous Agent)", "Zero-Auth Architecture", "Flutter Web (Agosphere)", "Supabase PostgreSQL", "TF-IDF NLP (93.4% F1)"],
+    xpUnlocked: ["Darshan AI (RAG Assistant)", "FastAPI + OpenRouter", "Flutter Web (Agosphere)", "Supabase PostgreSQL", "TF-IDF NLP (93.4% F1)"],
     loot: "Twin Live Web Ecosystem (Darshan-AI & Agosphere)",
-    story: "Shipped impactful production web systems including Darshan AI (autonomous agent web platform with zero auth friction) and Agosphere (direct farm produce marketplace).",
+    story: "systems including Darshan AI (autonomous agent web platform with zero auth friction) and Agosphere (direct farm produce marketplace).	Shipped two live web systems: Darshan AI (a full-stack AI assistant with document RAG, tool calling and GitHub analysis) and Agosphere (direct farm produce marketplace).",
     icon: 'projects'
   },
   {
